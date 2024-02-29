@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gkN-hl-XPG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="viewControllerProjesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dünyanın en tatlı şeyi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eo-0M-mwh">
+                                <rect key="frame" x="103" y="149" width="198" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CEVABI GİRİNİZ." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="st3-d8-x49">
+                                <rect key="frame" x="65" y="198" width="263" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwz-mm-52J">
+                                <rect key="frame" x="113" y="250" width="167" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="kontrol et"/>
+                                <connections>
+                                    <action selector="kontrolEtTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Nw-6A-uFD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuA-UJ-Wxj">
+                                <rect key="frame" x="135" y="402" width="123" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="VC git"/>
+                                <connections>
+                                    <segue destination="L0j-Lc-yFd" kind="show" id="GHC-m6-B8N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eXT-MT-WhO"/>
+                    <connections>
+                        <outlet property="birinciLabel" destination="7Eo-0M-mwh" id="l5D-2O-CEj"/>
+                        <outlet property="textField" destination="st3-d8-x49" id="QgZ-MN-fbu"/>
+                        <segue destination="L0j-Lc-yFd" kind="show" identifier="toSecondVC" id="jy8-7y-YaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
+        </scene>
+        <!--Ikinci View Controller-->
+        <scene sceneID="glu-iV-vlZ">
+            <objects>
+                <viewController id="L0j-Lc-yFd" customClass="ikinciViewController" customModule="viewControllerProjesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wml-TO-MoS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8S-iT-olP">
+                                <rect key="frame" x="62" y="120" width="269" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TEBRİKLER!! BİLDİNİZ!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tx-Xl-teO">
+                                <rect key="frame" x="80" y="134" width="234" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X99-8l-8Hl">
+                                <rect key="frame" x="87" y="211" width="218" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dUg-1J-kMz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vxP-iJ-8qn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vxP-iJ-8qn" firstAttribute="bottom" secondItem="X99-8l-8Hl" secondAttribute="bottom" constant="557" id="9qV-Ef-USz"/>
+                            <constraint firstItem="9Tx-Xl-teO" firstAttribute="top" secondItem="vxP-iJ-8qn" secondAttribute="top" constant="31" id="H5C-cY-OL9"/>
+                            <constraint firstItem="J8S-iT-olP" firstAttribute="centerY" secondItem="9Tx-Xl-teO" secondAttribute="centerY" id="NeW-Kw-B0o"/>
+                            <constraint firstItem="J8S-iT-olP" firstAttribute="top" secondItem="vxP-iJ-8qn" secondAttribute="top" constant="17" id="UFh-3W-sr1"/>
+                            <constraint firstItem="J8S-iT-olP" firstAttribute="leading" secondItem="vxP-iJ-8qn" secondAttribute="leading" constant="62" id="YPm-7n-AjU"/>
+                            <constraint firstItem="9Tx-Xl-teO" firstAttribute="centerX" secondItem="X99-8l-8Hl" secondAttribute="centerX" id="fK2-DE-qJJ"/>
+                            <constraint firstItem="J8S-iT-olP" firstAttribute="centerX" secondItem="9Tx-Xl-teO" secondAttribute="centerX" id="gxw-Ma-skW"/>
+                            <constraint firstItem="X99-8l-8Hl" firstAttribute="leading" secondItem="vxP-iJ-8qn" secondAttribute="leading" constant="87" id="mbP-g7-JIP"/>
+                            <constraint firstItem="X99-8l-8Hl" firstAttribute="top" secondItem="J8S-iT-olP" secondAttribute="bottom" constant="34" id="ogo-hI-dZ7"/>
+                            <constraint firstItem="X99-8l-8Hl" firstAttribute="centerX" secondItem="wml-TO-MoS" secondAttribute="centerX" id="pQ4-i6-oeh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ff4-SG-li7"/>
+                    <connections>
+                        <outlet property="girienIDLabel" destination="X99-8l-8Hl" id="32Y-PM-e8y"/>
+                        <outlet property="ikinciLabel" destination="9Tx-Xl-teO" id="6fb-WA-cMC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ef-7x-l4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962.5954198473282" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6I9-Hd-AhP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gkN-hl-XPG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hUp-vN-cX2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dYg-4o-xmE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yj-e9-Faj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jy8-7y-YaZ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
